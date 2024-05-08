@@ -6,6 +6,9 @@
 
 
 
+
+
+
 function Buildchar(str) {
     const charobj = {}
 
@@ -25,12 +28,12 @@ var isAnagram = function(s, t) {
     if (Object.keys(sObj).length  !== Object.keys(tObj).length) {
         return false 
     }
-
     for (const char in sObj) {
-        if (sObj[char]!== tObj[char]) {
-            return false 
-        }
+    if (sObj[char] !== tObj[char]) {
+        return false   
     }
+}
     return true
+
 };
 
